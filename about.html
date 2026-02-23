@@ -2,51 +2,134 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio - About Us</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">ModernPortfolio</a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<header>
-    <div class="container nav-container">
-        <div class="logo">MyPortfolio</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <main>
+        <!-- Page Title -->
+        <section class="page-title bg-light">
+            <div class="container">
+                <h1>About Our Studio</h1>
+                <p>Passionate creators dedicated to digital excellence</p>
+            </div>
+        </section>
 
-<section class="page-title">
-    <h1>About Us</h1>
-</section>
+        <!-- Our Story Section - Image Left -->
+        <section class="about-section section-padding">
+            <div class="container">
+                <div class="two-column">
+                    <div class="about-image">
+                        <img src="images/about.jpg" alt="Our studio workspace">
+                    </div>
+                    <div class="about-content">
+                        <h2>Our Story</h2>
+                        <p>Founded in 2015, ModernPortfolio began as a small team of designers with a big vision: to make beautiful, functional websites accessible to businesses of all sizes. What started as a passion project has grown into a full-service digital agency trusted by clients worldwide.</p>
+                        <p>We believe that great design is about more than just aesthetics—it's about creating meaningful connections between brands and their audiences. Every project we undertake is an opportunity to solve problems, tell stories, and build something extraordinary.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section class="two-col container">
-    <div><img src="images/image1.jpg" alt=""></div>
-    <div>
-        <h2>Our Story</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-    </div>
-</section>
+        <!-- Our Mission Section - Image Right -->
+        <section class="about-section section-padding bg-light">
+            <div class="container">
+                <div class="two-column reverse">
+                    <div class="about-content">
+                        <h2>Our Mission</h2>
+                        <p>To empower businesses with digital experiences that inspire, engage, and convert. We're committed to pushing the boundaries of web design while maintaining the highest standards of usability and performance.</p>
+                        <p>Every line of code we write, every pixel we place, and every interaction we design serves a purpose: to help our clients succeed in the digital world.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/service1.jpg" alt="Team collaboration">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section class="two-col reverse container">
-    <div><img src="images/image2.jpg" alt=""></div>
-    <div>
-        <h2>Our Mission</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-    </div>
-</section>
+        <!-- Values Section -->
+        <section class="values-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Our Core Values</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Innovation</h3>
+                            <p>We constantly explore new technologies and techniques to deliver cutting-edge solutions.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Quality</h3>
+                            <p>We never compromise on quality, ensuring every project meets our exacting standards.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Integrity</h3>
+                            <p>We build honest, transparent relationships with our clients based on trust and respect.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<footer>
-    <div class="container">
-        <p>© 2026 MyPortfolio. All rights reserved.</p>
-    </div>
-</footer>
+        <!-- Team Section -->
+        <section class="team-section section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Meet The Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/gallery1.jpg" alt="Jane Doe">
+                        </div>
+                        <h3>Jane Doe</h3>
+                        <p>Creative Director</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/gallery2.jpg" alt="John Smith">
+                        </div>
+                        <h3>John Smith</h3>
+                        <p>Lead Developer</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/gallery3.jpg" alt="Emily Chen">
+                        </div>
+                        <h3>Emily Chen</h3>
+                        <p>UX Designer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ModernPortfolio. All rights reserved.</p>
+            <p>Designed with passion for digital excellence</p>
+        </div>
+    </footer>
 </body>
 </html>
