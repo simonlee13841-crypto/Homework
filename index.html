@@ -1,89 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Home | Studio Portfolio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">ModernPortfolio</a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<header class="header">
-  <div class="container nav-container">
-    <div class="logo">StudioX</div>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <main>
+        <!-- Hero Slider Section -->
+        <section class="hero-slider">
+            <div class="slider-container">
+                <div class="slide slide-1">
+                    <div class="slide-content">
+                        <h1>Creative Design Solutions</h1>
+                        <p>We bring your ideas to life with modern and elegant design</p>
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="slide slide-2">
+                    <div class="slide-content">
+                        <h1>Responsive & Mobile First</h1>
+                        <p>Your website will look perfect on all devices</p>
+                        <a href="gallery.html" class="btn btn-primary">View Our Work</a>
+                    </div>
+                </div>
+                <div class="slide slide-3">
+                    <div class="slide-content">
+                        <h1>User-Centered Design</h1>
+                        <p>Creating experiences that engage and convert</p>
+                        <a href="about.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>Creative Digital Solutions</h1>
-    <p>Design. Strategy. Innovation.</p>
-    <a href="contact.html" class="btn">Start a Project</a>
-  </div>
-</section>
+        <!-- About Preview Section -->
+        <section class="about-preview section-padding">
+            <div class="container">
+                <div class="two-column">
+                    <div class="about-preview-content">
+                        <h2>We Create Digital Excellence</h2>
+                        <p>With over a decade of experience in web design and development, we've helped hundreds of businesses establish their online presence with stunning, functional websites.</p>
+                        <p>Our approach combines aesthetic appeal with technical excellence, ensuring your site not only looks beautiful but performs flawlessly.</p>
+                        <a href="about.html" class="btn btn-secondary">Read Our Story</a>
+                    </div>
+                    <div class="about-preview-image">
+                        <img src="images/about.jpg" alt="Our team working on a project">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section class="about-preview container">
-  <div class="about-img">
-    <img src="images/about.jpg" alt="Team working">
-  </div>
-  <div class="about-text">
-    <h2>Who We Are</h2>
-    <p>We are a creative studio focused on delivering premium design and digital experiences.</p>
-    <a href="about.html" class="btn-outline">Learn More</a>
-  </div>
-</section>
+        <!-- Services Section -->
+        <section class="services section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">What We Offer</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/service1.jpg" alt="Web Design Service">
+                        </div>
+                        <div class="card-content">
+                            <h3>Web Design</h3>
+                            <p>Beautiful, custom designs that reflect your brand identity and engage your audience.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/service2.jpg" alt="Development Service">
+                        </div>
+                        <div class="card-content">
+                            <h3>Development</h3>
+                            <p>Clean, efficient code that makes your website fast, secure, and easy to manage.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/service3.jpg" alt="SEO Service">
+                        </div>
+                        <div class="card-content">
+                            <h3>SEO Optimization</h3>
+                            <p>Strategic optimization to help your website rank higher in search results.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section class="services container">
-  <h2 class="section-title">Our Services</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Web Design</h3>
-      <p>Modern responsive websites built for performance.</p>
-    </div>
-    <div class="card">
-      <h3>Branding</h3>
-      <p>Identity systems that create strong brand presence.</p>
-    </div>
-    <div class="card">
-      <h3>Development</h3>
-      <p>Scalable and maintainable web applications.</p>
-    </div>
-  </div>
-</section>
+        <!-- Gallery Preview Section -->
+        <section class="gallery-preview section-padding">
+            <div class="container">
+                <h2 class="section-title">Recent Work</h2>
+                <div class="preview-grid">
+                    <div class="preview-item">
+                        <img src="images/gallery1.jpg" alt="Project 1">
+                    </div>
+                    <div class="preview-item">
+                        <img src="images/gallery2.jpg" alt="Project 2">
+                    </div>
+                    <div class="preview-item">
+                        <img src="images/gallery3.jpg" alt="Project 3">
+                    </div>
+                    <div class="preview-item">
+                        <img src="images/gallery4.jpg" alt="Project 4">
+                    </div>
+                    <div class="preview-item">
+                        <img src="images/gallery5.jpg" alt="Project 5">
+                    </div>
+                    <div class="preview-item">
+                        <img src="images/gallery6.jpg" alt="Project 6">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="gallery.html" class="btn btn-secondary">View Full Gallery</a>
+                </div>
+            </div>
+        </section>
 
-<section class="gallery-preview container">
-  <h2 class="section-title">Recent Work</h2>
-  <div class="grid">
-    <img src="images/gallery1.jpg" alt="">
-    <img src="images/gallery2.jpg" alt="">
-    <img src="images/gallery3.jpg" alt="">
-    <img src="images/gallery4.jpg" alt="">
-    <img src="images/gallery5.jpg" alt="">
-    <img src="images/gallery6.jpg" alt="">
-  </div>
-</section>
+        <!-- Call to Action Section -->
+        <section class="cta section-padding">
+            <div class="container">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's create something amazing together. Get in touch today for a free consultation.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us Now</a>
+            </div>
+        </section>
 
-<section class="cta">
-  <div class="container">
-    <h2>Let’s Build Something Great</h2>
-    <a href="contact.html" class="btn">Contact Us</a>
-  </div>
-</section>
+        <!-- Contact Preview -->
+        <section class="contact-preview section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="two-column">
+                    <div class="contact-info">
+                        <h3>Let's Talk</h3>
+                        <p>Have a project in mind? We'd love to hear about it. Send us a message and we'll respond within 24 hours.</p>
+                        <ul class="contact-details">
+                            <li>📍 123 Design Street, Creative City</li>
+                            <li>📞 (555) 123-4567</li>
+                            <li>✉️ hello@modernportfolio.com</li>
+                        </ul>
+                    </div>
+                    <div class="contact-form-preview">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<footer>
-  <div class="container">
-    <p>© 2026 StudioX. All rights reserved.</p>
-  </div>
-</footer>
-
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ModernPortfolio. All rights reserved.</p>
+            <p>Designed with passion for digital excellence</p>
+        </div>
+    </footer>
 </body>
 </html>
