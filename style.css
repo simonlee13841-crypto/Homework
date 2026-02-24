@@ -320,22 +320,30 @@ ul {
     gap: var(--spacing-md);
     align-items: center;
 }
-.about-image {
-    height: 400px;
+
+/* Style for ALL images in two-column layouts (about page and homepage) */
+.two-column .about-image,
+.two-column .about-preview-image {
+    height: 450px;  /* Increased height for fuller images */
+    width: 100%;
     overflow: hidden;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
 }
 
-.about-image img {
+.two-column .about-image img,
+.two-column .about-preview-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: var(--transition);
 }
 
-.about-image:hover img {
+.two-column .about-image:hover img,
+.two-column .about-preview-image:hover img {
     transform: scale(1.05);
 }
+
 .two-column.reverse .about-content {
     order: 2;
 }
